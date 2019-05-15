@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+:root {
+  --pastel: #D2D8B3;
+  --raisin: #272727;
+  --beige: #D4AA7D;
+  --tuscan: #EFD09E;
+  --blue: #90A9B7;
+}
+
+body {
+  background: var(--raisin);
+  color: var(--raisin);
+  font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+}
+
+.header{
+    background: var(--beige);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+}
+
+.header h3{
+  text-transform: uppercase;
+}
+
+.logo{
+   
+    width: 10rem;
+    /* border: 2px solid; */
+   
+  }
+
+.logo img{
+    /* border: 2px solid; */
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.header h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    /* border: 2px solid; */
+    /* letter-spacing: .5rem; */
+}
+
+.date{
+    /* border: 2px solid; */
+    height: 100%;
+    width: 14rem;
+    font-size: .9rem;
+   
+}
+
+
+.mainSection{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: calc(100vh - 7rem);
+
+}
+
+.exit, .submit{
+     position: relative;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid; */
+    display: flex;
+}
+
+
+.exit .quote{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem; 
+    background: var(--tuscan);
+    border-radius: 10px;
+    border: none;
+   
+}
+.author{
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+
+
+.submitBtn{
+    margin: auto;
+    width: 8rem;
+    padding: .8rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+    background: var(--beige);
+}
+
+.submitBtn:hover{
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.footer{
+     background: var(--beige);
+   text-align: center;
+   font-size: 1rem;
+    padding: .5rem;
 }
