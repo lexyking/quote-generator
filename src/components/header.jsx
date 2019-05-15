@@ -27,8 +27,8 @@ class Header extends Component {
                 <div className="logo"><img src="../images/logolexy_1.png" alt="logo" />
                 </div>
                 <h3 className="title">Random quotes Generator</h3>
-                <div className="date"><span className="currentDate">{this.state.date}</span> -
-                <span className="currentTime">{this.state.time}</span></div>
+                <div className="date"><span className="currentDate">{this.state.date}</span>
+                    <span className="currentTime">{this.state.time}</span></div>
             </div>
         )
     }

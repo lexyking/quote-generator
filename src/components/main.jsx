@@ -11,6 +11,7 @@ class Main extends Component {
         }
     }
 
+
     generateQuote = () => {
         console.log('component mounted');
         fetch('https://joan-quote-se.glitch.me/quotes/underscore')
@@ -18,10 +19,10 @@ class Main extends Component {
             .then(data => this.setState({ quotes: data.quote, author: data.author }));
     }
 
-    // componentDidMount() {
+    componentDidMount() {
 
-    //     this.generateQuote();
-    // }
+        this.generateQuote();
+    }
 
     render() {
 
@@ -30,7 +31,7 @@ class Main extends Component {
                 <section className="mainSection">
                     <section className="exit">
                         <div className="quote">
-                            <p>{this.state.quotes}</p>
+                            <p className="content">{this.state.quotes}</p>
                             <p className="author">{this.state.author}</p>
                         </div>
                     </section>
