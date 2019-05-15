@@ -36,7 +36,7 @@ class Main extends Component {
                             <p className="author">{this.state.author}</p>
                         </div>
                     </section>
-                    <img src="../images/logolexy_1.png" alt="logo" />
+
                     <section className="submit">
                         <button onClick={this.generateQuote}
                             className="submitBtn">New Quote</button>
