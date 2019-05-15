@@ -37,7 +37,7 @@ class Main extends Component {
                     </section>
                     <section className="submit">
                         <button onClick={this.generateQuote}
-                            className="submitBtn">Submit</button>
+                            className="submitBtn">New Quote</button>
                     </section>
 
                 </section>
