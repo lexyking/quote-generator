@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import logo from './logo.png'
 
 
 class Header extends Component {
@@ -24,7 +25,7 @@ class Header extends Component {
 
         return (
             <div className="header">
-                <div className="logo"><img src="../images/logolexy_1.png" alt="logo" />
+                <div className="logo"><img src={logo} alt="logo"></img>
                 </div>
                 <h3 className="title">Random quotes Generator</h3>
                 <div className="date"><span className="currentDate">{this.state.date}</span>
